@@ -28,9 +28,10 @@
           </button>
           <div class="profile">
             <picture class="profile-img-container">
+              <input type="file" name="" id="profileInput">
               <img
                 class="profile-img"
-                src="https://secure.gravatar.com/avatar/46fe56917f314a2b657799b42306a1b4?s=256&d=mm&r=g"
+                src="./src/img/profile.png"
                 alt=""
               />
             </picture>
@@ -105,9 +106,9 @@
               />
             </svg>
           </button>
-          <input class="input" type="text" placeholder=" Message" />
+          <textarea autofocus="true" class="input" type="text" placeholder=" Message"></textarea>
 
-          <button class="file footer-button">
+          <button class="file footer-button hidden-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -121,7 +122,7 @@
               />
             </svg>
           </button>
-          <button class="camara footer-button">
+          <button class="camara footer-button hidden-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -162,37 +163,14 @@
       <main class="messages-container">
         <section class="messages">
           <!-- insert notes here -->
-          <custom-message other first>Oye, ya te acostaste??</custom-message>
-          <custom-message first status="seen">ci, por?</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Jean Paul es bobo</custom-message>
-          <custom-message status="seen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non exercitationem quos assumenda voluptas magni quisquam soluta, porro officia veritatis praesentium sunt libero totam alias recusandae laborum, voluptate incidunt labore earum?</custom-message>
-          <custom-message status="seen" other first>Jean Paul es bobo</custom-message>
+          <info-message >Hoy</info-message>
+          <info-message security></info-message>
+          <!-- <custom-message first other><p>aguacate</p><span>ewe</span><span class="message-space" style="opacity: 0;">aaaaaaaaaa</span></custom-message> -->
         </section>
       </main>
       <section class="main"></section>
     </section>
 
-    <script src="src/index.js"></script>
+    <script type="module" src="src/index.js"></script>
   </body>
 </html>
