@@ -90,6 +90,7 @@ function sendMessageHandler(e) {
     e.preventDefault()
     sendMessage(true)
   }
+  console.log(input.textContent)
 }
 
 
